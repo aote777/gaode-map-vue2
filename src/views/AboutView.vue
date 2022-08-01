@@ -1,5 +1,22 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <div class="about" id="map-container"></div>
 </template>
+
+<script>
+export default {
+  name: 'about',
+  data() {
+    return {}
+  },
+  mounted() {
+    var map = new AMap.Map('map-container')
+  },
+  methods: {},
+}
+</script>
+
+<style lang="scss">
+.about {
+  height: 800px;
+}
+</style>
